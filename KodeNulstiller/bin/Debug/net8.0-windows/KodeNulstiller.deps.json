@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KodeNulstiller/1.0.0": {
+        "runtime": {
+          "KodeNulstiller.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KodeNulstiller/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
