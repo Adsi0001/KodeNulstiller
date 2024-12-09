@@ -63,6 +63,6 @@ namespace KodeNulstiller
             {
                 MessageBox.Show("Adgangskoden er blevet opdateret!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-        }
+        } 
     }
 }
