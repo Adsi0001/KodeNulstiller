@@ -18,31 +18,31 @@ namespace KodeNulstiller
             InitializeComponent();
         }
 
-        // Denne metode validerer adgangskoden
+        // Tjekker om adgangskoden er gyldig
         private bool ValidatePassword(string password)
         {
-            // Tjek om længden er mellem 8 og 32 tegn
+            // Tjekker om længden er mellem 8 og 32 tegn
             if (password.Length < 8 || password.Length > 32)
             {
                 MessageBox.Show("Adgangskoden skal være mellem 8 og 32 tegn.", "Fejl", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
 
-            // Tjek om der er både store og små bogstaver
+            // Tjekker om der er både store og små bogstaver
             if (!password.Any(char.IsUpper) || !password.Any(char.IsLower))
             {
                 MessageBox.Show("Adgangskoden skal indeholde både store og små bogstaver.", "Fejl", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
 
-            // Tjek om der er tal
+            // Tjekker om der er tal
             if (!password.Any(char.IsDigit))
             {
                 MessageBox.Show("Adgangskoden skal indeholde mindst et tal.", "Fejl", MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
             }
 
-            // Tjek om der er specialtegn (f.eks. !, @, #, $, %, osv.)
+            // Tjekker om der er specialtegn
             if (!password.Any(ch => !char.IsLetterOrDigit(ch)))
             {
                 MessageBox.Show("Adgangskoden skal indeholde mindst et specialtegn (f.eks. !, @, #, $, osv.).", "Fejl", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -53,12 +53,12 @@ namespace KodeNulstiller
             return true;
         }
 
-        // Denne metode kaldes, når brugeren klikker på "Nulstil adgangskode"-knappen
+        // Reset password
         private void ResetPasswordButton_Click(object sender, RoutedEventArgs e)
         {
-            string newPassword = NewPasswordTextBox.Text; // Hent adgangskoden fra tekstboksen
+            string newPassword = NewPasswordTextBox.Text; // Den nye adgangskode
 
-            // Hvis adgangskoden er valid
+            // Hvis adgangskoden er godkendt bliver den opdateret
             if (ValidatePassword(newPassword))
             {
                 MessageBox.Show("Adgangskoden er blevet opdateret!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);

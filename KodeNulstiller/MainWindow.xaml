@@ -28,6 +28,8 @@
             <TextBox x:Name="NewPasswordTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="30"/>
             <Button Content="Nulstil Adgangskode" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="30"  Click="ResetPasswordButton_Click"/>
             <Label
+                Content="Skal være mellem 8 og 32 tegn"/>
+            <Label
                 Content="Skal indeholde mindst et stort bogstav"/>
             <Label
                 Content="Skal indeholde mindst et lille bogstav"/>

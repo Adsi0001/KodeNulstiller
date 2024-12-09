@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KodeNulstiller")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+752a025dc9032deecca6e1cb25fa838e284ac953")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8adc7d688f29a802793e933dadc537dd18f71ea7")]
 [assembly: System.Reflection.AssemblyProductAttribute("KodeNulstiller")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KodeNulstiller")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
